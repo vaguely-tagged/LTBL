@@ -1,0 +1,14 @@
+{
+  "name": "ltbl",
+  "version": "1.0.0",
+  "description": "Let There Be Light",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx electron main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.2.2"
+  }
+}
