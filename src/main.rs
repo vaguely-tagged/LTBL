@@ -11,15 +11,20 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     //get init brightness first
     let mut brightness: u8 = percent;
 
-    let icon = image::open("icon.jpg")?.to_rgba8();
-    let (icon_width, icon_height) = icon.dimensions();
+    // let icon = image::open("icon.jpg")?.to_rgba8();
+    // let (icon_width, icon_height) = icon.dimensions();
 
-    let options = eframe::NativeOptions {
-        viewport: egui::ViewportBuilder::default().with_inner_size([760.0, 75.0]).with_icon(egui::IconData {
-            rgba: icon.into_raw(),
-            width: icon_width,
-            height: icon_height
-        }),
+    // let options = eframe::NativeOptions {
+    //     viewport: egui::ViewportBuilder::default().with_inner_size([760.0, 75.0]).with_icon(egui::IconData {
+    //         rgba: icon.into_raw(),
+    //         width: icon_width,
+    //         height: icon_height
+    //     }),
+    //     ..Default::default()
+    // };
+
+     let options = eframe::NativeOptions {
+        viewport: egui::ViewportBuilder::default().with_inner_size([760.0, 75.0]),
         ..Default::default()
     };
 
