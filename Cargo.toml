@@ -7,3 +7,4 @@ edition = "2024"
 eframe = "0.32.0"
 egui = "0.32.0"
 hidapi = { version = "2.6.3", features = ["windows-native"] }
+image = "0.25.6"
